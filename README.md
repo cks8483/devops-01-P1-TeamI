@@ -1,23 +1,20 @@
-# Getting Started with Fastify-CLI [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+# 다운로드 안내
 
-## Available Scripts
+1. 이 Repository를 clone하세요.
+2. npm install fastify-mongodb 를 다운로드 해주세요.
+3. npm install fastify-cli -g 를 다운로드 해주세요.
 
-In the project directory, you can run:
+# 테스트에 필요한 api는 API.md 를 확인해주세요
 
-### `npm run dev`
+#  'npm run dev'
 
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+개발자 모드로 실행합니다.
+(http://localhost:3000) 브라우저 접속하여 확인합니다.
 
-### `npm start`
+# 'npm Strat'
 
-For production mode
+웹 서버와 연결합니다.
 
-### `npm run test`
 
-Run the test cases.
 
-## Learn More
 
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).

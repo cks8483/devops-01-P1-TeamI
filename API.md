@@ -23,26 +23,26 @@ code 200
 		"category" : "둥근 안경테",
 		"price" : 30000,
 		"Image": "http://image.auction.co.kr/itemimage/19/bc/0a/19bc0aa5b6.jpg"
-			}
-	},
-	{
+	}
+},
+{
      "_id": "2",
      "product":{
 		"name": "안경테_2",
 		"category" : "사각 안경테",
 		"price" : 50000,
 		"Image": "https://www.glassmatch.kr/img/product/content/217-855.jpg"
-		}
-	},
-	{
+	}
+},
+{
      "_id": "2",
      "product":{
 		"name": "안경테_3",
 		"category" : "사각 안경테",
 		"price" : 70000,
 		"Image": "https://www.glassmatch.kr/img/product/content/217-855.jpg"
-		}
 	}
+}
 ]
 ```
 
@@ -62,7 +62,7 @@ code 200
 		"category" : "둥근 안경테",
 	  "price" : 30000,
 	  "Image": "http://image.auction.co.kr/itemimage/19/bc/0a/19bc0aa5b6.jpg"
-		}
+	}
 }
 ```
 
@@ -83,16 +83,16 @@ code 200
 				"category" : "사각 안경테",
 			  "price" : 50000,
 			  "Image": "https://www.glassmatch.kr/img/product/content/217-855.jpg"
-			}
-	},
-	{
+	}
+},
+{
      "_id": "2",
      "product":{
 				"name": "안경테_3",
 				"category" : "사각 안경테",
 			  "price" : 70000,
 			  "Image": "https://www.glassmatch.kr/img/product/content/217-855.jpg"
-			}
+		}
 	}
 ]
 ```
