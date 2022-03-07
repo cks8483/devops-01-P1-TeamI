@@ -7,6 +7,7 @@
 1. 이 Repository를 clone하세요.
 2. npm install fastify-mongodb 를 다운로드 해주세요.
 3. npm install fastify-cli -g 를 다운로드 해주세요.
+4. npm install dotenv 를 다운로드 해주세요. 
 
 # 테스트에 필요한 api는 API.md 를 확인해주세요
 
