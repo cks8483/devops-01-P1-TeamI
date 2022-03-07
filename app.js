@@ -1,31 +1,27 @@
 'use strict'
 
+require('dotenv').config()
+
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
 
-module.exports = async function (fastify, opts) {
-
-  require('dotenv').config()
-  console.log(process.env.MONGODB_PW)
-
+ module.exports = async function (fastify, opts){
   fastify.register(AutoLoad, {
     dir: path.join(__dirname, 'plugins'),
     options: Object.assign({}, opts)
   })
 
-
+  // This loads all plugins defined in routes
+  // define your routes in one of these
   fastify.register(AutoLoad, {
     dir: path.join(__dirname, 'routes'),
     options: Object.assign({}, opts)
   })
-}
 
+  const id = process.env.MONGODB_ID
+  const password = process.env.MONGODB_PW
 
-
-//fastify
-fastify.register(require('fastify-mongodb'), {
-
-  forceClose: true,
-  
-  url: 'mongodb+srv://yunasung:a10031004!@cluster0.mxtb9.mongodb.net/firstTeamProject'
-})
+  fastify.register(require('fastify-mongodb'),{
+    forceClose: true,
+  url: 'mongodb+srv://yunasung:a10031004!@cluster0.mxtb9.mongodb.net/firstTeamProject?retryWrites=true&w=majority'
+})}
