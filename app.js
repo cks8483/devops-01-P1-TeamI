@@ -23,5 +23,5 @@ const AutoLoad = require('fastify-autoload')
 
   fastify.register(require('fastify-mongodb'),{
     forceClose: true,
-  url: 'mongodb+srv://yunasung:a10031004!@cluster0.mxtb9.mongodb.net/firstTeamProject?retryWrites=true&w=majority'
+  url: 'mongodb+srv://'+id+':'+password+'@cluster0.mxtb9.mongodb.net/firstTeamProject?retryWrites=true&w=majority'
 })}
