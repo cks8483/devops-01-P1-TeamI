@@ -19,5 +19,13 @@ module.exports = {
 
     const result = await collection.insertOne(body)
     return result
+  },
+  deleteOne: async (mongo, id) => {
+    const collection = mongo.db.collection('order')
+
+    const result = await collection.findOneAndDelete({
+      _id: ObjectId(id)
+    })
+    return result
   }
 }

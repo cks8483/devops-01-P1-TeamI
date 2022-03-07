@@ -1,5 +1,5 @@
 const{ObjectId} = require('fastify-mongodb')
-const product = require('../routes/product')
+const product = require('../routes/product/productapi')
 
 module.exports = {
   readAll: async (mongo) => {
@@ -18,6 +18,14 @@ module.exports = {
     const collection = mongo.db.collection('product')
 
     const result = await collection.insertOne(body)
+    return result
+  },
+  deleteOne: async (mongo, id) => {
+    const collection = mongo.db.collection('product')
+
+    const result = await collection.findOneAndDelete({
+      _id: ObjectId(id)
+    })
     return result
   }
 }

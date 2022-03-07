@@ -1,27 +1,20 @@
-# Routes Folder
+# 다운로드 안내
 
-Routes define routes within your application. Fastify provides an
-easy path to a microservice architecture, in the future you might want
-to independently deploy some of those.
+1. 이 Repository를 clone하세요.
+2. npm install fastify-mongodb 를 다운로드 해주세요.
+3. npm install fastify-cli -g 를 다운로드 해주세요.
 
-In this folder you should define all the routes that define the endpoints
-of your web application.
-Each service is a [Fastify
-plugin](https://www.fastify.io/docs/latest/Plugins/), it is
-encapsulated (it can have its own independent plugins) and it is
-typically stored in a file; be careful to group your routes logically,
-e.g. all `/users` routes in a `users.js` file. We have added
-a `root.js` file for you with a '/' root added.
+# 테스트에 필요한 api는 API.md 를 확인해주세요
 
-If a single file become too large, create a folder and add a `index.js` file there:
-this file must be a Fastify plugin, and it will be loaded automatically
-by the application. You can now add as many files as you want inside that folder.
-In this way you can create complex routes within a single monolith,
-and eventually extract them.
+#  'npm run dev'
 
-If you need to share functionality between routes, place that
-functionality into the `plugins` folder, and share it via
-[decorators](https://www.fastify.io/docs/latest/Decorators/).
+개발자 모드로 실행합니다.
+(http://localhost:3000) 브라우저 접속하여 확인합니다.
 
-If you're a bit confused about using `async/await` to write routes, you would
-better take a look at [Promise resolution](https://www.fastify.io/docs/latest/Routes/#promise-resolution) for more details.
+# 'npm Strat'
+
+웹 서버와 연결합니다.
+
+
+
+
