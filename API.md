@@ -145,7 +145,7 @@ Request body
 Respone
 
 ```json
-code 200
+code 201
 {
     "id" : "3",
     "user_id" : "2",
